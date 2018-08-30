@@ -11,24 +11,23 @@ from keras.preprocessing.image import load_img
 from IPython.display import display
 from PIL import Image
 from keras.models import load_model
-from utils import *
 
 def test(test_batchsize=10, show_errors = 'False', show_correct_predictions = 'False'):
     """
     :param test_batchsize:
     """
-    # Load test images
-    print('reading test images...')
-    test_dir1, test_generator = test_datagenerator()
-
     # Load the trained model
     print('loading trained model...')
-    new_model = keras.models.load_model('trained_models/model1.h5')
+    new_model = load_model('trained_models/model1.h5')
     print('loading complete')
 
     # Print the summary of the loaded model
     print('summary of loaded model')
     new_model.summary()
+
+    # Load test images
+    print('reading test images...')
+    test_dir, test_generator = test_datagenerator()
 
     # Get the filenames from the generator
     fnames = test_generator.filenames
@@ -79,7 +78,7 @@ def test(test_batchsize=10, show_errors = 'False', show_correct_predictions = 'F
                 pred_label,
                 predictions[errors[i]][pred_class])
 
-            original = load_img('{}/{}'.format(test_dir1, fnames[errors[i]]))
+            original = load_img('{}/{}'.format(test_dir, fnames[errors[i]]))
             plt.figure(figsize=[7, 7])
             plt.axis('off')
             plt.title(title)
@@ -110,21 +109,17 @@ def Main():
     """
     docs goes here!!!
     """
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument("test_batchsize", help="Test batch size", type=str)
-    # parser.add_argument("show_errors", help="show errors", type=str)
-    # parser.add_argument("show_correct_predictions", help="show correct predictions", type=str)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("test_batchsize", help="Test batch size", type=str)
+    parser.add_argument("show_errors", help="show errors", type=str)
+    parser.add_argument("show_correct_predictions", help="show correct predictions", type=str)
 
-    # args = parser.parse_args()
+    args = parser.parse_args()
 
     # call testing function
-    # test(args.test_batchsize,
-    #      args.show_errors,
-    #      args.show_correct_predictions)
-
-    test(test_batchsize,                  # test batch size
-         show_errors,                     # show errors
-         show_correct_predictions)        # show correct predictions
+    test(args.test_batchsize,
+         args.show_errors,
+         args.show_correct_predictions)
 
 if __name__ == '__main__':
     Main()

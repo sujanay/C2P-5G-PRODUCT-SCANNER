@@ -10,7 +10,6 @@ from models.vgg16_model_fine_tune import vgg16_finetuned
 from datagenerator.datagenerator import train_datagenerator, validation_datagenerator
 from IPython.display import display
 from PIL import Image
-from utils import *
 
 def create_model():
     """
@@ -81,18 +80,18 @@ def show_graphs(history):
     loss = history.history['loss']
     val_loss = history.history['val_loss']
 
-    epochs1 = range(len(acc))
+    epochs = range(len(acc))
 
-    plt.plot(epochs1, acc, 'b', label='Training acc')
-    plt.plot(epochs1, val_acc, 'r', label='Validation acc')
+    plt.plot(epochs, acc, 'b', label='Training acc')
+    plt.plot(epochs, val_acc, 'r', label='Validation acc')
     plt.title('Training and validation accuracy')
     plt.legend()
     plt.savefig('Training and validation accuracy')
 
     plt.figure()
 
-    plt.plot(epochs1, loss, 'b', label='Training loss')
-    plt.plot(epochs1, val_loss, 'r', label='Validation loss')
+    plt.plot(epochs, loss, 'b', label='Training loss')
+    plt.plot(epochs, val_loss, 'r', label='Validation loss')
     plt.title('Training and validation loss')
     plt.legend()
     plt.savefig('Training and validation loss')
@@ -102,22 +101,22 @@ def Main():
     """
         This Main() function builds the model, trains the model with the product images
         and saves the trained model (model1.h5) in trained_models/ folder.
-    # """
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument("epochs", help="The number of epochs for training.", type=int)
-    # parser.add_argument("train_batchsize", help="Training batch size", type=int)
-    # parser.add_argument("val_batchsize", help="Validation batch size", type=int)
-    #
-    # args = parser.parse_args()
+    """
+    parser = argparse.ArgumentParser()
+    parser.add_argument("epochs", help="The number of epochs for training.", type=int)
+    parser.add_argument("train_batchsize", help="Training batch size", type=int)
+    parser.add_argument("val_batchsize", help="Validation batch size", type=int)
+
+    args = parser.parse_args()
 
     # print(args.epochs)
     # print(args.train_batchsize)
     # print(args.val_batchsize)
 
     # Grab the command line arguments
-    # epochs = args.epochs
-    # train_batchsize = args.train_batchsize
-    # val_batchsize = args.val_batchsize
+    epochs = args.epochs
+    train_batchsize = args.train_batchsize
+    val_batchsize = args.val_batchsize
 
     # Build the model
     model = create_model()

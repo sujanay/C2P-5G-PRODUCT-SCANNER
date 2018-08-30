@@ -11,7 +11,6 @@ from keras.preprocessing.image import load_img
 from IPython.display import display
 from PIL import Image
 from keras.models import load_model
-from utils import *
 
 def test(test_batchsize=10, show_errors = 'False', show_correct_predictions = 'False'):
     """
@@ -19,7 +18,7 @@ def test(test_batchsize=10, show_errors = 'False', show_correct_predictions = 'F
     """
     # Load test images
     print('reading test images...')
-    test_dir1, test_generator = test_datagenerator()
+    test_dir, test_generator = test_datagenerator()
 
     # Load the trained model
     print('loading trained model...')
@@ -79,7 +78,7 @@ def test(test_batchsize=10, show_errors = 'False', show_correct_predictions = 'F
                 pred_label,
                 predictions[errors[i]][pred_class])
 
-            original = load_img('{}/{}'.format(test_dir1, fnames[errors[i]]))
+            original = load_img('{}/{}'.format(test_dir, fnames[errors[i]]))
             plt.figure(figsize=[7, 7])
             plt.axis('off')
             plt.title(title)
@@ -122,9 +121,7 @@ def Main():
     #      args.show_errors,
     #      args.show_correct_predictions)
 
-    test(test_batchsize,                  # test batch size
-         show_errors,                     # show errors
-         show_correct_predictions)        # show correct predictions
+    test(10, 'true', 'false')
 
 if __name__ == '__main__':
     Main()
