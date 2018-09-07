@@ -5,7 +5,7 @@ import time
 import numpy as np
 import matplotlib.pyplot as plt
 from keras import optimizers
-from models.vgg16_model_fine_tune import vgg16_finetuned
+from models.vgg16_model import vgg16_finetuned
 from datagenerator.datagenerator import test_datagenerator
 from keras.preprocessing.image import load_img
 from IPython.display import display

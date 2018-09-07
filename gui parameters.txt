@@ -1,0 +1,4 @@
+1. loss types
+2. Optimizers {RMSprop, Adam, GradientDescent, etc)
+3. Learning Rates {different learning rates for different optimizers)
+4. Metrics {accuracy, loss, val_acc, val_loss, etc)

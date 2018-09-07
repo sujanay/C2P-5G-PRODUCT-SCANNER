@@ -5,7 +5,7 @@ import time
 import numpy as np
 import matplotlib.pyplot as plt
 from keras import optimizers
-from models.vgg16_model_fine_tune import vgg16_finetuned
+from models.vgg16_model import vgg16_finetuned
 from datagenerator.datagenerator import test_datagenerator
 from keras.preprocessing.image import load_img
 from IPython.display import display
@@ -15,6 +15,9 @@ from keras.models import load_model
 def test(test_batchsize=10, show_errors = 'False', show_correct_predictions = 'False'):
     """
     :param test_batchsize:
+    :param show_errors:
+    :param show_correct_predictions:
+    :return:
     """
     # Load the trained model
     print('loading trained model...')

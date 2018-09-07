@@ -5,7 +5,7 @@ import time
 import numpy as np
 import matplotlib.pyplot as plt
 from keras import optimizers
-from models.vgg16_model_fine_tune import vgg16_finetuned
+from models.vgg16_model import vgg16_finetuned
 from datagenerator.datagenerator import test_datagenerator
 from keras.preprocessing.image import load_img
 from IPython.display import display
@@ -13,7 +13,7 @@ from PIL import Image
 from keras.models import load_model
 from utils import *
 
-def test(test_batchsize=10, show_errors = 'False', show_correct_predictions = 'False'):
+def test(test_batchsize=10, show_errors = 'False', show_correct_predictions = 'false'):
     """
     :param test_batchsize:
     """
@@ -86,6 +86,7 @@ def test(test_batchsize=10, show_errors = 'False', show_correct_predictions = 'F
             plt.imshow(original)
             plt.savefig(str(i) + '.jpg')
             plt.show()
+
     # show correct predictions
     if show_correct_predictions in ['True', 'TRUE', 'true']:
         # Show the correct predictions
@@ -94,7 +95,7 @@ def test(test_batchsize=10, show_errors = 'False', show_correct_predictions = 'F
             pred_label = idx2label[pred_class]
 
             title = 'Original label:{}, Prediction :{}, confidence : {:.3f}'.format(
-                fnames[correct_predictions[i]].split('/')[0],
+                fnames[correct_predictions[i]].split('\\')[0],
                 pred_label,
                 predictions[correct_predictions[i]][pred_class])
 
@@ -121,6 +122,7 @@ def Main():
     # test(args.test_batchsize,
     #      args.show_errors,
     #      args.show_correct_predictions)
+
 
     test(test_batchsize,                  # test batch size
          show_errors,                     # show errors

@@ -3,17 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="961da159-884d-4051-858f-f46167937d2c" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/command_line_arguments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/read_excel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optimizers/optimizers.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Product_Image_Recognition.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Product_Image_Recognition.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datagenerator/datagenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/datagenerator/datagenerator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dummy.py" beforeDir="false" afterPath="$PROJECT_DIR$/dummy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/vgg16_model_fine_tune.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/vgg16_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test - Copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/test - Copy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train - Copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/train - Copy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train_copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_copy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_loaded_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_loaded_model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,51 +26,52 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Product_Image_Recognition$test_copy.coverage" NAME="test_copy Coverage Results" MODIFIED="1534974225269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Product_Image_Recognition$utils.coverage" NAME="utils Coverage Results" MODIFIED="1535663690584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Image_Recognition$utils.coverage" NAME="utils Coverage Results" MODIFIED="1535672171008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Product_Image_Recognition$train_copy.coverage" NAME="train_copy Coverage Results" MODIFIED="1534890617672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Product_Image_Recognition$datagenerator.coverage" NAME="datagenerator Coverage Results" MODIFIED="1535648791500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datagenerator" />
-    <SUITE FILE_PATH="coverage/Product_Image_Recognition$dummy.coverage" NAME="dummy Coverage Results" MODIFIED="1535651773094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Image_Recognition$dummy.coverage" NAME="dummy Coverage Results" MODIFIED="1536269776915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Product_Image_Recognition$read_excel.coverage" NAME="read_excel Coverage Results" MODIFIED="1535047857299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Product_Image_Recognition$train.coverage" NAME="train Coverage Results" MODIFIED="1535664011961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Product_Image_Recognition$command_line_arguments.coverage" NAME="command_line_arguments Coverage Results" MODIFIED="1534890288861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Product_Image_Recognition$test.coverage" NAME="test Coverage Results" MODIFIED="1535665789879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Product_Image_Recognition$test.coverage" NAME="test Coverage Results" MODIFIED="1536248724090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Product_Image_Recognition$train___Copy.coverage" NAME="train - Copy Coverage Results" MODIFIED="1534775432397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="269708513">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.6" value="3" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ipynb" value="1" />
-          <entry key="py" value="48" />
+          <entry key="py" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IPNB" value="1" />
-          <entry key="Python" value="48" />
+          <entry key="Python" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="16" />
-          <entry key="py" value="9113" />
+          <entry key="py" value="11304" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="9129" />
+          <entry key="Python" value="11320" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -75,50 +79,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="103" column="18" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
-              <folding>
-                <element signature="e#10#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <marker date="1535653757850" expanded="true" signature="85:249" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datagenerator/datagenerator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.py">
+        <entry file="file://$PROJECT_DIR$/optimizers/optimizers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1137">
-              <caret line="100" column="89" lean-forward="true" selection-start-line="100" selection-start-column="89" selection-end-line="100" selection-end-column="89" />
+            <state relative-caret-position="451">
+              <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
               <folding>
-                <element signature="e#10#22#0" expanded="true" />
+                <marker date="1536338142991" expanded="true" signature="413:498" ph="..." />
+                <marker date="1536338142991" expanded="true" signature="498:499" ph="..." />
+                <marker date="1536338142991" expanded="true" signature="556:857" ph="..." />
+                <marker date="1536338142991" expanded="true" signature="903:1165" ph="..." />
+                <marker date="1536338142991" expanded="true" signature="1221:1226" ph="..." />
+                <marker date="1536338142991" expanded="true" signature="1221:1678" ph="..." />
+                <marker date="1536338142991" expanded="true" signature="1763:1768" ph="..." />
+                <marker date="1536338142991" expanded="true" signature="1763:2810" ph="..." />
+                <marker date="1536338142991" expanded="true" signature="2810:2811" ph="..." />
               </folding>
             </state>
           </provider>
@@ -143,13 +118,14 @@
         <option value="$PROJECT_DIR$/train - Copy.py" />
         <option value="$PROJECT_DIR$/command_line_arguments.py" />
         <option value="$PROJECT_DIR$/read_excel.py" />
-        <option value="$PROJECT_DIR$/test_copy.py" />
         <option value="$PROJECT_DIR$/train_copy.py" />
         <option value="$PROJECT_DIR$/datagenerator/datagenerator.py" />
-        <option value="$PROJECT_DIR$/train.py" />
-        <option value="$PROJECT_DIR$/dummy.py" />
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/test_copy.py" />
+        <option value="$PROJECT_DIR$/dummy.py" />
+        <option value="$PROJECT_DIR$/optimizers/optimizers.py" />
       </list>
     </option>
   </component>
@@ -160,10 +136,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="502" />
-    <option name="y" value="74" />
-    <option name="width" value="1198" />
-    <option name="height" value="708" />
+    <option name="x" value="-101" />
+    <option name="y" value="86" />
+    <option name="width" value="1474" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -181,12 +157,7 @@
             <path>
               <item name="Product_Image_Recognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="Product_Image_Recognition" type="462c0819:PsiDirectoryNode" />
-              <item name="datagenerator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Product_Image_Recognition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Product_Image_Recognition" type="462c0819:PsiDirectoryNode" />
-              <item name="trained_models" type="462c0819:PsiDirectoryNode" />
+              <item name="optimizers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.dummy">
     <configuration name="datagenerator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Product_Image_Recognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -336,10 +307,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.train" />
-        <item itemvalue="Python.utils" />
         <item itemvalue="Python.dummy" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.utils" />
+        <item itemvalue="Python.train" />
         <item itemvalue="Python.datagenerator" />
       </list>
     </recent_temporary>
@@ -367,22 +338,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="580" y="42" width="1474" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15618336" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14780764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.30911064" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22993493" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35403726" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.20281996" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4978678" weight="0.32321042" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021322" side_tool="true" weight="0.32321042" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -392,6 +363,29 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26010546" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.30911064" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31358886" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.36767897" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -429,33 +423,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/read_excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train_copy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="124" column="5" selection-end-line="133" selection-end-column="10" />
-          <folding>
-            <element signature="e#10#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_copy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="98" lean-forward="true" selection-end-line="124" selection-end-column="10" />
-          <folding>
-            <element signature="e#10#22#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -466,53 +437,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/datagenerator/datagenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-449">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_excel.py" />
+    <entry file="file://$PROJECT_DIR$/train_loaded_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+        <state relative-caret-position="500">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_copy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1535653757850" expanded="true" signature="85:249" ph="..." />
+            <element signature="e#10#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dummy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="523">
+          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
           <folding>
             <element signature="e#308#347#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datagenerator/datagenerator.py">
+    <entry file="file://$PROJECT_DIR$/models/vgg16_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="103" column="18" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
+        <state relative-caret-position="-305">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
             <element signature="e#10#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/optimizers/optimizers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1137">
-          <caret line="100" column="89" lean-forward="true" selection-start-line="100" selection-start-column="89" selection-end-line="100" selection-end-column="89" />
+        <state relative-caret-position="451">
+          <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
           <folding>
-            <element signature="e#10#22#0" expanded="true" />
+            <marker date="1536338142991" expanded="true" signature="413:498" ph="..." />
+            <marker date="1536338142991" expanded="true" signature="498:499" ph="..." />
+            <marker date="1536338142991" expanded="true" signature="556:857" ph="..." />
+            <marker date="1536338142991" expanded="true" signature="903:1165" ph="..." />
+            <marker date="1536338142991" expanded="true" signature="1221:1226" ph="..." />
+            <marker date="1536338142991" expanded="true" signature="1221:1678" ph="..." />
+            <marker date="1536338142991" expanded="true" signature="1763:1768" ph="..." />
+            <marker date="1536338142991" expanded="true" signature="1763:2810" ph="..." />
+            <marker date="1536338142991" expanded="true" signature="2810:2811" ph="..." />
           </folding>
         </state>
       </provider>
